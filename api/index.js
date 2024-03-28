@@ -5,6 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Serve static files from the public directory
+console.log(__dirname);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Route to serve the static HTML file
